@@ -2,15 +2,15 @@
 
 [ext_resource type="Material" uid="uid://ccaqllmchrt0x" path="res://res/shad mat/grass.tres" id="1_5i04s"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5i04s"]
-
 [sub_resource type="SphereMesh" id="SphereMesh_5i04s"]
+height = 0.001
+radial_segments = 664
+rings = 95
 
 [node name="grass" type="Node3D" unique_id=2122121699]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1658289714]
 material_override = ExtResource("1_5i04s")
-material_overlay = SubResource("StandardMaterial3D_5i04s")
 cast_shadow = 0
 visibility_range_end = 20.0
 mesh = SubResource("SphereMesh_5i04s")
