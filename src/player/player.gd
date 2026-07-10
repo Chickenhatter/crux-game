@@ -34,7 +34,7 @@ func _input(event):
 		var from = camera.project_ray_origin(event.position)
 		var to = from + camera.project_ray_normal(event.position) * ray_length
 		
-		var space_state = get_world().direct_space_state
+		var space_state = get_world_3d().direct_space_state
 		var result = space_state.intersect_ray(from, to)
 		
 		if result:
