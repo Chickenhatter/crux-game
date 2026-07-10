@@ -7,7 +7,7 @@ extends CharacterBody3D
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity.y -= GRAVITY * delta
-
+		
 	if Input.is_action_just_pressed("Jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
@@ -22,20 +22,3 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0.0, SPEED)
 
 	move_and_slide()
-
-
-
-
-@export var camera : Camera3D #(please place in camera)
-var ray_length = 1000 #basecurrent
-
-func _input(event):
-	if event is InputEventMouseMotion:
-		var from = camera.project_ray_origin(event.position)
-		var to = from + camera.project_ray_normal(event.position) * ray_length
-		
-		var space_state = get_world_3d().direct_space_state
-		var result = space_state.intersect_ray(from, to)
-		
-		if result:
-			look_at(result.position, Vector3.UP)
