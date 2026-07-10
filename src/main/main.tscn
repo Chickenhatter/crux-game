@@ -87,4 +87,4 @@ transform = Transform3D(0.26024693, 0, 0, 0, 0.26024693, 0, 0, 0, 0.26024693, 0,
 mesh = SubResource("CapsuleMesh_sb4vr")
 
 [node name="Player" parent="." unique_id=228418535 instance=ExtResource("5_jkpqq")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.234823, 0)
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 3.234823, 0)
