@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://yuab7pujov7d"]
 
 [ext_resource type="Script" uid="uid://b2ra2gj0fghwc" path="res://src/main/main.gd" id="1_3eh75"]
+[ext_resource type="PackedScene" uid="uid://cx73g2ouvnf0f" path="res://ast/models/islands/island1.blend" id="2_3s6yk"]
 
 [node name="world" type="Node3D" unique_id=1243497675]
 script = ExtResource("1_3eh75")
+
+[node name="island1" parent="." unique_id=247840648 instance=ExtResource("2_3s6yk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10253525, 0, -0.1800195)
