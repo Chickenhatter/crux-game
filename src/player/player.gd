@@ -1,4 +1,8 @@
-extends Node3D
+extends CharacterBody3D
+
+@export var SPEED = 5.0
+@export var JUMP_VELOCITY = 5.0
+@export var GRAVITY = 10.0
 
 
 # Called when the node enters the scene tree for the first time.
