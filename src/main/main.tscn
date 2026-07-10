@@ -53,6 +53,8 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ihxa7")
 
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_sb4vr"]
+
 [node name="world" type="Node3D" unique_id=1243497675]
 script = ExtResource("1_3eh75")
 
@@ -76,5 +78,33 @@ environment = ExtResource("3_ab7mr")
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 shadow_enabled = true
 
-[node name="grass" parent="." unique_id=2122121699 instance=ExtResource("4_djufw")]
-transform = Transform3D(0.63, 0, 0, 0, 0.63, 0, 0, 0, 0.63, 0.29954892, 1.5808463, 0.24248526)
+[node name="grass1" parent="." unique_id=2122121699 instance=ExtResource("4_djufw")]
+transform = Transform3D(0.5149999, 0, 0, 0, 0.515, 0, 0, 0, 0.515, 1.3615803, 1.5285192, 0.24248526)
+
+[node name="grass2" parent="." unique_id=247102211 instance=ExtResource("4_djufw")]
+transform = Transform3D(0.5149999, 0, 0, 0, 0.515, 0, 0, 0, 0.515, 2.3615804, 1.5285192, 0.24248526)
+
+[node name="grass3" parent="." unique_id=1718121641 instance=ExtResource("4_djufw")]
+transform = Transform3D(0.5149999, 0, 0, 0, 0.515, 0, 0, 0, 0.515, 3.3615804, 1.5285192, 0.24248526)
+
+[node name="grass4" parent="." unique_id=268407187 instance=ExtResource("4_djufw")]
+transform = Transform3D(0.5149999, 0, 0, 0, 0.515, 0, 0, 0, 0.515, 1.3615803, 1.5285192, 1.2424853)
+
+[node name="grass5" parent="." unique_id=10220673 instance=ExtResource("4_djufw")]
+transform = Transform3D(0.5149999, 0, 0, 0, 0.515, 0, 0, 0, 0.515, 2.3615804, 1.5285192, 1.2424853)
+
+[node name="grass6" parent="." unique_id=370211786 instance=ExtResource("4_djufw")]
+transform = Transform3D(0.5149999, 0, 0, 0, 0.515, 0, 0, 0, 0.515, 3.3615804, 1.5285192, 1.2424853)
+
+[node name="grass7" parent="." unique_id=1936401779 instance=ExtResource("4_djufw")]
+transform = Transform3D(0.5149999, 0, 0, 0, 0.515, 0, 0, 0, 0.515, 1.3615803, 1.5285192, 2.2424853)
+
+[node name="grass8" parent="." unique_id=572057972 instance=ExtResource("4_djufw")]
+transform = Transform3D(0.5149999, 0, 0, 0, 0.515, 0, 0, 0, 0.515, 2.3615804, 1.5285192, 2.2424853)
+
+[node name="grass9" parent="." unique_id=1820768393 instance=ExtResource("4_djufw")]
+transform = Transform3D(0.5149999, 0, 0, 0, 0.515, 0, 0, 0, 0.515, 3.3615804, 1.5285192, 2.2424853)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1132733184]
+transform = Transform3D(0.26024693, 0, 0, 0, 0.26024693, 0, 0, 0, 0.26024693, 0, 1.8705392, 0)
+mesh = SubResource("CapsuleMesh_sb4vr")
