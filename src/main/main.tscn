@@ -3,8 +3,28 @@
 [ext_resource type="Script" uid="uid://b2ra2gj0fghwc" path="res://src/main/main.gd" id="1_3eh75"]
 [ext_resource type="PackedScene" uid="uid://cx73g2ouvnf0f" path="res://ast/models/islands/island1.blend" id="2_3s6yk"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3s6yk"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_ab7mr"]
+sky_material = SubResource("ProceduralSkyMaterial_3s6yk")
+
+[sub_resource type="Environment" id="Environment_djufw"]
+background_mode = 2
+sky = SubResource("Sky_ab7mr")
+
 [node name="world" type="Node3D" unique_id=1243497675]
 script = ExtResource("1_3eh75")
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=919607688]
+environment = SubResource("Environment_djufw")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=386701490]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
 [node name="island1" parent="." unique_id=247840648 instance=ExtResource("2_3s6yk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10253525, 0, -0.1800195)
+
+[node name="Node3D" type="Node3D" parent="." unique_id=660599315]
