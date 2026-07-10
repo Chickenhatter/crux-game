@@ -26,8 +26,6 @@ func _physics_process(delta: float) -> void:
 
 
 
-
-
 @export var camera : Camera3D #(please place in camera)
 var ray_length = 1000 #basecurrent
 
