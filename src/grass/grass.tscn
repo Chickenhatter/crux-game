@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://06v0kldaajnb"]
 
+[ext_resource type="Material" uid="uid://ccaqllmchrt0x" path="res://res/shad mat/grass.tres" id="1_5i04s"]
+
 [sub_resource type="PlaneMesh" id="PlaneMesh_sb4vr"]
+material = ExtResource("1_5i04s")
 subdivide_width = 200
 subdivide_depth = 200
 
